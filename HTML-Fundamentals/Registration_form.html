@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Marathon Registration Form</title>
+    <!--h1 with Registration Race  -->
+    <h1>Race Registration</h1>
+    <!-- Form -->
+    <form action="/dummy">
+    <!-- text box with 1st and last name  -->
+    <div>
+        <label for="first">Enter First Name: </label>
+        <input type="text" name="first" id="first" placeholder="Enter your first name" required>
+        <label for="last">Enter Last Name</label>
+        <input type="text" name="last" id="last" placeholder="Enter your last name" required>
+    </div>
+    <!-- select Race -->
+    <p>Select a Race:</p>
+    <!-- 3 radio button  -->
+    <div>
+        <input type="radio" name="Run" id="fun" value="fun" required>
+        <label for="fun">Fun Run 5k</label>
+        <br>
+        
+        <input type="radio" name="Run" id="half" value="half" required>
+        <label for="half">Half Marathon</label>
+        <br>
+
+        <input type="radio" name="Run" id="full" value="full" required>
+        <label for="full">Full Marathon</label>
+    </div>
+    <!-- email and password buttons -->
+    <div>
+        <label for="email">Enter email</label>
+        <input type="email" name="email" id="email" required>
+        <label for="password">Enter your password</label>
+        <input type="password" name="password" id="password" minlength="5" maxlength="20" required>
+    </div>   
+
+    <!-- drop down menu with age group -->
+    <div>
+        <label for="age" >Select your age group: </label>
+        <select name="age" id="age" required>
+            <option value="">Choose one option</option>
+            <option value="under 18">Under 18</option>
+            <option value="18-30">18-30</option>
+            <option value="30+">30 +</option>
+        </select>
+    </div>
+    <!-- register button -->
+    <button>register!</button>
+    </form>    
+    
+</body>
+</html> 
